@@ -38,16 +38,7 @@ void list_print(list_t *l);
 
 /* Returns the length of the list. */
 int list_length(list_t *l);
-int length() {
-   int length = 0;
-   struct node *current;
-	
-   for(current = head; current != NULL; current = current->next) {
-      length++;
-   }
-	
-   return length;
-}
+
 
 /* Methods for adding to the list. */
 void list_add_to_back(list_t *l, elem value);
